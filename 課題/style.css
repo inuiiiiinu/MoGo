@@ -7,19 +7,14 @@
 /* ---- header ---- */
 
 .header_wrap {
-  position: relative;
   background-image: url(img/main_img.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  padding-top: 52.0833333%;
 }
 
 .header_container {
-  position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .header_flex {
@@ -30,7 +25,8 @@
 	-ms-flex-pack: justify;
   justify-content: space-between;
   width: 1210px;
-  margin: 25px auto 150px;
+  margin: 0 auto;
+  padding: 25px 0 150px;
 }
 
 .header_a {
@@ -39,6 +35,10 @@
   font-size: 30px;
   font-weight: bold;
   color: #fff;
+}
+
+.header_nav {
+  margin: auto 0;
 }
 
 .header_ul {
@@ -83,12 +83,23 @@
 }
 
 .header_maintitle {
+  position: relative;
   font-family: 'Montserrat',sans-serif;
   font-size: 150px;
   font-weight: bold;
   color: #fff;
   line-height: 0.9;
-  margin: 30px 0 120px;
+  width: 880px;
+  margin: 30px auto 120px;
+}
+
+.header_maintitle::before {
+  content: '';
+  position: absolute;
+  border-bottom: solid 2px #fff;
+  width: 65px;
+  bottom: -65px;
+  left: 405px;
 }
 
 .header_a03 {
@@ -154,4 +165,196 @@
   font-size: 14px;
   font-weight: normal;
   margin-left: 5px;
+}
+
+/* ---- main ---- */
+
+/* ---- section ---- */
+
+.section_wrap {
+  text-align: center;
+}
+
+.section_top {
+  padding-top: 90px;
+}
+
+.section_subtitle {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section_title {
+  position: relative;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.section_title::before {
+  content: '';
+  position: absolute;
+  border-bottom: solid 2px #f38181;
+  width: 65px;
+  top: 75px;
+  left: 125px;
+}
+
+.section_text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #999;
+  line-height: 1.6;
+  margin: 85px 0 95px;
+}
+
+.section_flex {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 1215px;
+  margin: 0 auto 105px;
+}
+
+.section_box {
+  position: relative;
+}
+
+.section_img02 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.section_bottom {
+  background-color: #95e1d3;
+}
+
+.section_flex02 {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section_box02 {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack: distribute;
+	justify-content: space-around;
+  border-left: solid 2px #a0e4d7;
+  border-right: solid 2px #a0e4d7;
+  width: 480px;
+}
+
+.section_number {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.6;
+  color: #fff;
+  margin: 90px 0;
+}
+
+.section_number02 {
+  margin-left: 70px;
+}
+
+.section_span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* ---- section02 ---- */
+
+.section02_wrap {
+  text-align: center;
+  padding-top: 105px;
+}
+
+.section02_container {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: solid 2px #f2f2f2;
+  width: 1200px;
+  margin: 105px auto 0;
+  padding-bottom: 50px;
+}
+
+.section02_container02 {
+  border-bottom: 0;
+  margin: 40px auto 120px;
+  padding-bottom: 0;
+}
+
+.section02_flex {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  width: 365px;
+}
+
+.section02_img {
+  width: 32px;
+  height: 32px;
+}
+
+.section02_box {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.section02_heading {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.section02_text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999;
+  line-height: 1.6;
+}
+
+/* ---- section03 ---- */
+
+.section03_wrap {
+  background-image: url(img/section03_img.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 110px 0 625px;
+}
+
+.section_subtitle02 {
+  margin: 0 0 15px;
+}
+
+.section_title02 {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.section_title02::after {
+  position: absolute;
+  content: url(img/section03_img02.png);
+  top: 330px;
+  right: -220px;
 }
